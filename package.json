@@ -1,0 +1,24 @@
+{
+  "name": "last-mile-crm",
+  "version": "1.0.0",
+  "description": "Premium AI-Powered Customer Relationship Management Platform for last-mile logistics companies",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,json,md}\"",
+    "test": "npm run test --workspaces"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "npm@10.0.0"
+}
