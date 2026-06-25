@@ -1,7 +1,3 @@
-/**
- * Error Handling Middleware
- */
-
 import { Request, Response, NextFunction } from 'express';
 import { createErrorResponse } from '@/utils/response';
 import logger from '@/utils/logger';

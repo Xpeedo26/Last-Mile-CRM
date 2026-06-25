@@ -1,12 +1,5 @@
-/**
- * Environment Configuration
- * Centralized environment variable management with validation
- */
-
 interface EnvironmentConfig {
-  database: {
-    url: string;
-  };
+  database: { url: string };
   jwt: {
     secret: string;
     expiry: string;
@@ -45,7 +38,6 @@ const getEnvironmentConfig = (): EnvironmentConfig => {
     'NODE_ENV',
   ];
 
-  // Validate required environment variables
   const missingVars = requiredEnvVars.filter((varName) => !process.env[varName]);
   if (missingVars.length > 0) {
     console.error(`Missing environment variables: ${missingVars.join(', ')}`);
@@ -53,9 +45,7 @@ const getEnvironmentConfig = (): EnvironmentConfig => {
   }
 
   return {
-    database: {
-      url: process.env.DATABASE_URL!,
-    },
+    database: { url: process.env.DATABASE_URL! },
     jwt: {
       secret: process.env.JWT_SECRET!,
       expiry: process.env.JWT_EXPIRY!,

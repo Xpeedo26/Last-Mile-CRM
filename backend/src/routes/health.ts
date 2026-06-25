@@ -1,7 +1,3 @@
-/**
- * Health Check Route
- */
-
 import { Router, Request, Response } from 'express';
 import { createSuccessResponse } from '@/utils/response';
 

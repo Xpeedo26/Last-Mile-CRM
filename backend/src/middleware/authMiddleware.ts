@@ -1,8 +1,3 @@
-/**
- * Authentication Middleware
- * JWT token validation and user context
- */
-
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { config } from '@/config/environment';

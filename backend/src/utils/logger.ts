@@ -1,8 +1,3 @@
-/**
- * Logger Configuration
- * Winston-based logging utility
- */
-
 import winston from 'winston';
 import { config } from '@/config/environment';
 
